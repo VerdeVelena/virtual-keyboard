@@ -1,0 +1,72 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 2.4rem;
+	font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+	color: rgb(56, 88, 56);
+	margin-top: 20px;
+	margin-bottom: 25px;
+	text-align: center;
+	letter-spacing: 1.3px;
+}
+
+#keyboard,
+#text {
+	width: 75vw;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid rgb(56, 88, 56);
+	padding: 10px;
+}
+#text {
+	margin-bottom: 20px;
+}
+.keyboard__keys {
+	text-align: center;
+}
+.keyboard__key {
+	width: 6%;
+	max-width: 90px;
+	height: 45px;
+	font-size: 1.3rem;
+	margin: 3px;
+	border: none;
+	border-radius: 3px;
+	background: rgb(56, 88, 56, 0.2);
+	color: rgb(56, 88, 56);
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	vertical-align: top;
+	cursor: pointer;
+}
+.keyboard__key:active {
+	/* transition: 2s; */
+	background: rgba(56, 88, 56, 0.82);
+	color: rgb(240, 248, 255);
+}
+.keyboard__key_large {
+	width: 15%;
+}
+.keyboard__key_extra-large {
+	width: 35%;
+	max-width: 450px;
+}
+.keyboard__key-activ::after {
+	content: "";
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background: rgb(56, 88, 56);
+}
+.keyboard__key-activate::after {
+	background: rgb(100, 202, 100);
+}
